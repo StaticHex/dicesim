@@ -1,0 +1,31 @@
+﻿  main.cpp
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(576): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(598): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(848): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_menu_item.h(243): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_menu_item.h(267): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_menu_item.h(397): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\dicesim.h(2): fatal error C1083: Cannot open include file: 'btBulletDynamicsCommon.h': No such file or directory
+  GlWindow.cpp
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(576): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(598): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\packages\fltk.1.3.3.33\build\native\include\fl\fl_widget.h(848): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(55): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(79): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(83): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(89): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(95): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(105): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(397): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(408): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(419): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(430): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(441): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\glwindow.cpp(452): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+  diceSim.cpp
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\dicesim.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\dicesim.h(2): fatal error C1083: Cannot open include file: 'btBulletDynamicsCommon.h': No such file or directory
+  Generating Code...

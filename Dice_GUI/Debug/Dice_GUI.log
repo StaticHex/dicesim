@@ -1,0 +1,25 @@
+﻿  main.cpp
+c:\users\indeg\documents\visual studio 2015\bullet\src\linearmath\btidebugdraw.h(169): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+c:\users\indeg\documents\visual studio 2015\bullet\src\linearmath\btidebugdraw.h(170): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+c:\users\indeg\documents\visual studio 2015\bullet\src\linearmath\btidebugdraw.h(171): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(37): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(128): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(130): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(133): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(138): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(186): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(187): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(199): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(200): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(259): warning C4805: '!=': unsafe mix of type 'bool' and type 'boolean' in operation
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(266): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(279): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(321): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\indeg\documents\visual studio 2015\projects\dice_gui\dice_gui\main.cpp(325): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Dice_GUI.vcxproj -> C:\Users\indeg\documents\visual studio 2015\Projects\Dice_GUI\Debug\Dice_GUI.exe
+  Dice_GUI.vcxproj -> C:\Users\indeg\documents\visual studio 2015\Projects\Dice_GUI\Debug\Dice_GUI.pdb (Full PDB)
