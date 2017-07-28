@@ -150,7 +150,7 @@ int main(int argc, char **argv) {
 	GLWINDOW->border(0);
 	GLWINDOW->redraw();
 	GLWINDOW->end();
-	window->label("Dice Roll Simulator v1.1");
+	window->label("Dice Roll Simulator v1.2");
 	window->end();
 
 	// Make the main window and graphics window visible, give focus to graphics window
@@ -277,14 +277,12 @@ DWORD WINAPI updateGUI(LPVOID lpParameter) {
 * - Handles the running of the actual physics simulation             *
 **********************************************************************/
 DWORD WINAPI simFunction(LPVOID lpParameter) {
-	string outputTxt;
 	while (running) {
 		srand(time(0));
 		if (simStart) {
 			// Clear buffer
 			oBuffer->remove(0, oBuffer->length());
-
-			for (int i = 0; i < numSim; i++) {
+			for (int i = 0; i < numSim && simStart; i++) {
 				// Create physics sim object
 				sim = diceSim((xVal / 9.0f) * 2.5f, (yVal / 9.0f) * 2.5f, (zVal / 9.0f) * 2.5f);
 				// Update sim 
@@ -295,14 +293,27 @@ DWORD WINAPI simFunction(LPVOID lpParameter) {
 					// call update function
 					sim.updateSim();
 				}
-				// - If complete output "Simulation i+1 complete, dice rolled a: #
-				outputTxt = "Simulation " + to_string(i + 1) + " complete, rolled a: " + sim.getFaceUp(true) + "\n";
-				output->insert(outputTxt.c_str());
-				output->show_insert_position();
+
+				// Output every 25th simulation; done to save time
+				if (i % 25 == 0 && i != 0) {
+					output->insert(outputTxt.c_str());
+					output->show_insert_position();
+					outputTxt = "";
+				}
+				else {
+					outputTxt += "Sim " + to_string(i + 1) + ": " + sim.getFaceUp(true) + "\n";
+				}
+				resultTxt += sim.getFaceUp(true) + "\n";
 				Fl::flush();
+
 				// clean up memory
 				sim.cleanup();
 			}
+			// Output remaining buffer for cases where number of simulations wasn't divisible by 25
+			output->insert(outputTxt.c_str());
+			output->show_insert_position();
+			outputTxt = "";
+
 			// Disable simStart so we don't run forever
 			simStart = false;
 			GLWINDOW->take_focus();
@@ -344,6 +355,7 @@ string parseString(float val, int digits) {
 void exit_cb(Fl_Widget *, void*) {
 	// Stop our threads
 	running = false;
+	simStart = false;
 
 	// Double check with the user first
 	if (fl_ask("Do you really want to exit?")) {
@@ -406,13 +418,17 @@ void save_cb(Fl_Widget* widget, void*) {
 
 				if (fl_ask("This file already exists, do you want to overwrite?")) {
 					// If user is OK with overwriting, output to file
-					oBuffer->outputfile(fName, 0, oBuffer->length());
+					ofstream saveFile(fName);
+					saveFile.write(resultTxt.c_str(), strlen(resultTxt.c_str()));
+					saveFile.close();
 					overwrite = true;
 				}
 			}
 			// If file didn't exist, then there's nothing to confirm, so output to file
 			else {
-				oBuffer->outputfile(fName, 0, oBuffer->length());
+				ofstream saveFile(fName);
+				saveFile.write(resultTxt.c_str(), strlen(resultTxt.c_str()));
+				saveFile.close();
 				overwrite = true;
 			}
 		}

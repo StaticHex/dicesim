@@ -103,7 +103,9 @@ float	yVal;	   // Holds the yValue of the center of gravity (in mm)
 float	zVal;	   // Holds the zValue of the center of gravity (in mm)
 bool	zActive;   // Holds whether the y-axis or z-axis is being controlled by graphics controls
 
-				   // GUI Helper variables
-bool	running = true;		// Used to help shut down threads when the program ends
-bool	simStart = false;	// Used to signal the simThread to start working
-bool	bufferInit = false; // Used to signify that oBuffer has been initialized
+// GUI Helper variables
+bool	running		= true;		// Used to help shut down threads when the program ends
+bool	simStart	= false;	// Used to signal the simThread to start working
+bool	bufferInit	= false;	// Used to signify that oBuffer has been initialized
+string  outputTxt	= "";		// Used to help update output text;
+string  resultTxt	= "";		// Used to output results to file (face values only)

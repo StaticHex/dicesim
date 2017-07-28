@@ -18,6 +18,6 @@ main.cpp(199): warning C4244: '=': conversion from 'double' to 'float', possible
 main.cpp(200): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 main.cpp(261): warning C4805: '!=': unsafe mix of type 'bool' and type 'boolean' in operation
 main.cpp(268): warning C4800: 'boolean': forcing value to bool 'true' or 'false' (performance warning)
-main.cpp(282): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-main.cpp(331): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-main.cpp(335): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+main.cpp(281): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+main.cpp(342): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+main.cpp(346): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data

@@ -1,6 +1,6 @@
 ================================================================================
 --------------------------------------------------------------------------------
-<> Dice Roll Simulator v1.0                                                   <>
+<> Dice Roll Simulator v1.2                                                   <>
 --------------------------------------------------------------------------------
 ================================================================================
 Programmed By: Joseph Bourque
@@ -11,7 +11,10 @@ Artwork By: Joseph Bourque
 1. Controls
 2. Program Overview
 3. Known Bugs
-4. FAQ
+4. List of Assumptions
+5. FAQ
+6. Changelog
+
 ================================================================================
 1. Controls
 --------------------------------------------------------------------------------
@@ -26,6 +29,7 @@ UP ----------------- Rotate die up
 DOWN --------------- Rotate die down
 LEFT --------------- Rotate die Left
 RIGHT -------------- Rotate die right
+
 --------------------------------------------------------------------------------
 2. Program Overview
 --------------------------------------------------------------------------------
@@ -35,6 +39,7 @@ RIGHT -------------- Rotate die right
 * The [start sim] and [reset sim] buttons function exactly the same as their
   menu counterparts and therefore, to review functionality for these buttons
   please refer to the menu overview below.
+
 --------------------------------------------------------------------------------
 <> Menu Overview                                                              <>
 --------------------------------------------------------------------------------
@@ -58,16 +63,68 @@ RIGHT -------------- Rotate die right
   - Reset View - Resets the dice to the initial front view
 * HELP
   - Displays this manual, nothing more.
+
 --------------------------------------------------------------------------------
 3. Known Bugs
 --------------------------------------------------------------------------------
 No bugs have been reported yet. To report a bug please contact the developer
 at indegon1@gmail.com or leave a comment on the program's git repository at
-##GIT ADDRESS HERE##
+https://github.com/StaticHex/dicesim
 
 --------------------------------------------------------------------------------
-4. FAQ
+4. List of Assumptions
+--------------------------------------------------------------------------------
+- Center of gravity assumed to always be on or inside the die; cannot move
+  center of gravity outside the die
+
+- No air resistance
+
+- Dice model has sharp corners even though actual die have a 1% bevel on
+  the edges
+
+- Die assumed to be made out of Poly(methyl methacrylate) (PPMA) and the 
+  restitution and coefficient of friction used are based on interactions between 
+  PPMA and felt on wood
+
+- Die assumed to only have ONE center of gravity vs. multiple
+
+--------------------------------------------------------------------------------
+5. FAQ
 --------------------------------------------------------------------------------
 This is a new program so no FAQ yet, to submit a question please contact the
 developer at indegon1@gmail.com or leave a comment on the program's git 
-repository at ##GIT ADDRESS HERE##
+repository at https://github.com/StaticHex/dicesim
+
+--------------------------------------------------------------------------------
+6. Changelog
+--------------------------------------------------------------------------------
+++ Version 1.1 ++
+--------------------------------------------------------------------------------
+- Fixed a bug involving updating the output area which caused the program to 
+  crash when running large numbers of simulations
+
+- Implemented smoother update tracking, no longer have to move the mouse to
+  get the GUI to update
+
+- Tested working with up to 1,000,000 simulations
+
+- Ran theoretical models to determine maximum number of simulations program
+  can handle: 1,000,000,000 simulations which would take approximately 
+  148 days to run to completion
+
+- Implemented upper bound on num sim box to reflect theoretical bound
+
+--------------------------------------------------------------------------------
+++ Version 1.2 ++
+--------------------------------------------------------------------------------
+- Changed text in output window from "Simulation n complete, rolled a: k" to
+  "Sim n: k"
+
+- Changed file output to simply be a list of the face values rather than having
+  preceeding text in front of each result
+
+- Limited GUI update to every 25 simulations vs. every simulation in order to
+  reduce the runtime per simulation 
+
+- Fixed exit function, you can now close the program during a simulation without
+  having to wait for the simulation to finish.
