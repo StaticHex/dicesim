@@ -1,6 +1,6 @@
 ================================================================================
 --------------------------------------------------------------------------------
-<> Dice Roll Simulator v1.1                                                   <>
+<> Dice Roll Simulator v1.2                                                   <>
 --------------------------------------------------------------------------------
 ================================================================================
 Programmed By: Joseph Bourque
@@ -69,7 +69,7 @@ RIGHT -------------- Rotate die right
 --------------------------------------------------------------------------------
 No bugs have been reported yet. To report a bug please contact the developer
 at indegon1@gmail.com or leave a comment on the program's git repository at
-##GIT ADDRESS HERE##
+https://github.com/StaticHex/dicesim
 
 --------------------------------------------------------------------------------
 4. List of Assumptions
@@ -93,7 +93,7 @@ at indegon1@gmail.com or leave a comment on the program's git repository at
 --------------------------------------------------------------------------------
 This is a new program so no FAQ yet, to submit a question please contact the
 developer at indegon1@gmail.com or leave a comment on the program's git 
-repository at ##GIT ADDRESS HERE##
+repository at https://github.com/StaticHex/dicesim
 
 --------------------------------------------------------------------------------
 6. Changelog
@@ -113,3 +113,18 @@ repository at ##GIT ADDRESS HERE##
   148 days to run to completion
 
 - Implemented upper bound on num sim box to reflect theoretical bound
+
+--------------------------------------------------------------------------------
+++ Version 1.2 ++
+--------------------------------------------------------------------------------
+- Changed text in output window from "Simulation n complete, rolled a: k" to
+  "Sim n: k"
+
+- Changed file output to simply be a list of the face values rather than having
+  preceeding text in front of each result
+
+- Limited GUI update to every 25 simulations vs. every simulation in order to
+  reduce the runtime per simulation 
+
+- Fixed exit function, you can now close the program during a simulation without
+  having to wait for the simulation to finish.
